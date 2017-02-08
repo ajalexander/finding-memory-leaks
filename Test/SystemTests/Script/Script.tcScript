@@ -74,6 +74,15 @@
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
+			<Node name="memorytest">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\Tests\MemoryTest.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{99867D69-021C-471C-8DA5-B03DBDD165B5}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
 		</Node>
 		<Node name="folders">
 			<Node name="pages">
@@ -89,6 +98,7 @@
 			<Node name="tests">
 				<Node name="folders"/>
 				<Node name="references">
+					<Prp name="{99867d69-021c-471c-8da5-b03dbdd165b5}" type="S" value=""/>
 					<Prp name="{a97fc0c6-70b4-45c0-a2c8-c9dc4968f0bd}" type="S" value=""/>
 				</Node>
 				<Prp name="caption" type="S" value="Tests"/>
