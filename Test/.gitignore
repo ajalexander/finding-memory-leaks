@@ -7,7 +7,11 @@
 # Type library declarations
 *.tlb
 
+# Visualization files
+*.tcVis
+
 # Log files
+Log/
 *.tcLogs
 
 # Backup files

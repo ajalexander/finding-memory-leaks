@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="application">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\Utilities\Application.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{63521438-9F88-45B0-9020-481B8E98C21E}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="assertionhelper">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\Utilities\AssertionHelper.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{2844328A-8DD3-4219-A88D-4768E5325B7D}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="categorylistpage">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\Pages\CategoryListPage.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{73133DC2-E4DC-4E62-93C6-C77C13439D78}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="categorytest">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\Tests\CategoryTest.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A97FC0C6-70B4-45C0-A2C8-C9DC4968F0BD}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="editcategorypage">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\Pages\EditCategoryPage.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{27B6ACB1-3AE5-42BE-AA69-90A1D3DEDE58}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="mainwindow">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\Windows\MainWindow.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{B146A5A6-856E-44C9-B637-698F79C983C3}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+		</Node>
+		<Node name="folders">
+			<Node name="pages">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{27b6acb1-3ae5-42be-aa69-90a1d3dede58}" type="S" value=""/>
+					<Prp name="{73133dc2-e4dc-4e62-93c6-c77c13439d78}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="Pages"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+			<Node name="tests">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{a97fc0c6-70b4-45c0-a2c8-c9dc4968f0bd}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="Tests"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+			<Node name="utilities">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{2844328a-8dd3-4219-a88d-4768e5325b7d}" type="S" value=""/>
+					<Prp name="{63521438-9f88-45b0-9020-481b8e98c21e}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="Utilities"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+			<Node name="windows">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{b146a5a6-856e-44c9-b637-698f79c983c3}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="Windows"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+		</Node>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{9252F941-DB23-4FCA-AA50-858B33BB4A19}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

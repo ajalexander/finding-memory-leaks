@@ -18,8 +18,8 @@
             <ItemsControl.ItemTemplate>
                 <DataTemplate DataType="viewModels:CategoryListItemViewModel">
                     <StackPanel Orientation="Vertical" Margin="0 0 0 5">
-                        <TextBlock FontSize="16" Text="{Binding Path=Name}"/>
-                        <TextBlock FontSize="13" Text="{Binding Path=ItemCount, StringFormat=Items: {0}}"/>
+                        <TextBlock x:Name="CategoryName" FontSize="16" Text="{Binding Path=Name}"/>
+                        <TextBlock x:Name="ItemCount" FontSize="13" Text="{Binding Path=ItemCount, StringFormat=Items: {0}}"/>
                     </StackPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
