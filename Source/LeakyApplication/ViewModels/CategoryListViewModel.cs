@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Linq;
-using System.Windows.Input;
 using LeakyApplication.Models;
 
 namespace LeakyApplication.ViewModels
 {
-    public class CategoryListViewModel
+    public class CategoryListViewModel : ObservableObject
     {
         public IEnumerable<CategoryListItemViewModel> Categories { get; private set; }
 
@@ -15,7 +16,7 @@ namespace LeakyApplication.ViewModels
         }
     }
 
-    public class CategoryListItemViewModel
+    public class CategoryListItemViewModel : ObservableObject
     {
         private readonly Category _category;
 
@@ -32,6 +33,19 @@ namespace LeakyApplication.ViewModels
         public CategoryListItemViewModel(Category category)
         {
             _category = category;
+
+            category.PropertyChanged += CategoryOnPropertyChanged;
+            category.Items.CollectionChanged += ItemsOnCollectionChanged;
+        }
+
+        private void CategoryOnPropertyChanged(object sender, PropertyChangedEventArgs propertyChangedEventArgs)
+        {
+            RaiseEvent("Name");
+        }
+
+        private void ItemsOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs notifyCollectionChangedEventArgs)
+        {
+            RaiseEvent("ItemCount");
         }
     }
 }
