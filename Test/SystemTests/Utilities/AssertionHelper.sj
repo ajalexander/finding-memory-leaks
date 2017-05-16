@@ -10,7 +10,7 @@ function Init()
     this.AreEqual = function (expected, actual)
     {
         expected = forceStrings(expected);
-        actual = forceStrings(expected);
+        actual = forceStrings(actual);
 
         var message = "Expected: '" + expected + "'\nActual: '" + actual + "'";
 
@@ -29,7 +29,7 @@ function Init()
         this.AreEqual("true", actual);
     }
 
-    this.IsFalse = function (actual, comment, defect)
+    this.IsFalse = function (actual)
     {
         this.AreEqual("false", actual);
     }
